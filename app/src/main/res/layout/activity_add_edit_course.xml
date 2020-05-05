@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".activities.AddEditCourseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_text_course_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course title" />
+
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:id="@+id/text_view_course_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course start date"
+            android:padding="8dp"
+            android:clickable="true"/>
+
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:id="@+id/text_view_course_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course end date"
+            android:padding="8dp"
+            android:clickable="true"/>
+
+        <EditText
+            android:id="@+id/edit_text_course_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course status" />
+
+        <EditText
+            android:id="@+id/edit_text_course_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course note"
+            android:inputType="textMultiLine"/>
+
+        <Button
+            android:id="@+id/button_share_course_note"
+            android:text="Share note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:backgroundTint="#8FC7EC"
+            android:layout_marginRight="8dp"/>
+
+        <EditText
+            android:id="@+id/edit_text_mentor_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mentor name" />
+
+        <EditText
+            android:id="@+id/edit_text_mentor_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mentor phone" />
+
+        <EditText
+            android:id="@+id/edit_text_mentor_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mentor email" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/add_edit_course_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/assessment_item"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_add_assessment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+            app:srcCompat="@drawable/ic_add"/>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Jason Loutensock Scheduler</string>
+
+    <string name="assessment_prompt">Choose assessment type</string>
+    <string-array name="assessment_types">
+        <item>Practice</item>
+        <item>Objective</item>
+        <item>Performance</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Select date</string>
+</resources>

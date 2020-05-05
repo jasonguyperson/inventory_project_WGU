@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".activities.DetailedTermActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_text_term_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Term title" />
+
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:id="@+id/text_view_term_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Term start date"
+            android:padding="8dp"
+            android:clickable="true"/>
+
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:id="@+id/text_view_term_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Term end date"
+            android:padding="8dp"
+            android:clickable="true"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/detailed_term_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/course_item"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_add_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+            app:srcCompat="@drawable/ic_add"/>
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
